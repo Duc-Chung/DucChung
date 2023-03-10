@@ -307,6 +307,12 @@
 .fooder .text_7 {
     width: 314px;
     margin-top: 20px;
-    font-size: 18px;
     font-family: segoe ui light;
+}
+.fooder .text_7 p {
+    margin-bottom: -20px;
+    font-size: 18px;
+}
+.fooder .text_7  .email{
+    margin-top: 20px;
 }
