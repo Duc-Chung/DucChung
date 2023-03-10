@@ -1,0 +1,312 @@
+* {
+    margin: 0 0 0;
+    box-sizing: border-box;
+}
+
+/* Backgroung + Logo */
+.container {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-color: rgb(56, 53, 56);
+}
+.container .background {
+    position: absolute;
+    width: 618px;
+    height: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    top: 0px;
+    left: 40%;
+    visibility: visible;
+}
+.container .header_item {
+    width: 1460px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+}
+.container .header_item .logo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+.container .header_item ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+    
+}
+.container .header_item ul li {
+    margin-left: 50px;
+    font-size: 20px;
+}
+.container .header_item ul li a {
+    text-decoration: none;
+    color: white;
+}
+.search_icon{
+    position: relative;
+    width: 10px;
+}
+.search_icon i{
+    position: absolute;
+    color: black;
+    padding: auto;
+    right: 10px;
+}
+.search_icon .search_text input {
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    border-radius: 5px;
+    top: -5px;
+    right: 0;
+    transition: 0.4s;
+    opacity: 0;
+}
+.search_icon:hover .search_text input {
+    width: 250px;
+    opacity: 1;
+}
+
+/* Mục sản phẩm */
+.column_container {
+    max-width: 1650px;
+    height: auto;
+    margin: 0 auto;
+}
+.column_container ul{
+    box-sizing: border-box;
+    list-style: none;
+}
+.column_container ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.column_container .section_title{
+    margin: 50px;
+    text-align: center;
+}
+.column_product {
+    max-width: 1620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+}
+.column_product .product {
+    width: 363px;
+    height: 551px;
+    margin: 15px;
+    display: flex;
+    position: relative;
+}
+.column_product .product .product_images {
+    width: 363px;
+    height: 453px;
+    position: relative;
+}
+.column_product .product .product_images .image_1{
+    position: absolute;
+    transition: 0.4s;
+    opacity: 1;
+}
+.column_product .product .product_images:hover .image_1{
+    opacity: 0;
+    
+}
+.column_product .product .product_images .image_2{
+    position: absolute;
+    transition: 0.4s;
+    opacity: 0;
+}
+.column_product .product .product_images:hover .image_2{
+    opacity: 1;
+}
+.column_product .product .item_info .title_column h3{
+    position: absolute;
+    font-size: 20px;
+    font-family: segoe ui light;
+    left: 0;
+    bottom: 45px;
+}
+.column_product .product .item_info .trademark{
+    position: absolute;
+    font-size: 14px;
+    left: 0;
+    bottom: 20px;
+    transition: 0.4s;
+    opacity: 1;
+}
+.column_product .product:hover .item_info .trademark{ opacity: 0; }
+.column_product .product .item_info .add_to_cart {
+    position: absolute;
+    font-size: 14px;
+    left: 0;
+    bottom: 20px;
+    transition: 0.4s;
+    opacity: 0;
+}
+.column_product .product:hover .item_info .add_to_cart { opacity: 1; }
+.column_product .product  .price_column {
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    bottom: 45px;
+} 
+.product_img{
+    width: 100%;
+    height: 100%;
+}
+.column_container button {
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 5px solid black;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.column_container button:hover {
+    background-color: rgb(188, 188, 188);
+}
+.product_loop {
+    max-width: 1620px;
+    height: 289px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.product_loop .product_category{
+    width: calc( 1580px / 3 );
+    padding: 0 15px;
+}
+.category {
+    width: 100%;
+}
+.section_title_2 {
+    width: 1620px;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-top: 30px;
+    font-family: segoe ui light;
+}
+.section_title_2 h2{
+    color: black;
+}
+.section_title_2 p{
+    color: gray;
+}
+.row_container {
+    max-width: 1620px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.row_container .product_row_4 {
+    width: 400px;
+    height: 370px;
+    padding: 0 15px;
+    margin: 0 0 30px;
+}
+.row_container .product_row_4 .blog_post_image{
+    height: 227px;
+    position: relative;
+}
+.row_container .product_row_4 .blog_post_image .custom_hover_icon{
+    width: 350px;
+    height: 207px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    transition: 0.4s;
+    opacity: 0;    
+}
+.row_container .product_row_4 .blog_post_image:hover .custom_hover_icon{
+    opacity: 0.8;
+}
+.row_4 {
+    width: 100%;
+    height: 100%;
+}
+.row_5 {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 39%;
+    left: 39%;
+}
+.row_container .product_row_4 .blog_post_content {
+    padding: 10px 0;
+}
+.row_container .product_row_4 .blog_post_content .blog_post_date {
+    font-size: 10px;
+    color: gray;
+}
+.row_container .product_row_4 .blog_post_content a{
+    font-family: segoe ui light;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Phần cuối */
+#fooder_box {
+    width: 100%;
+    background-color: rgb(198, 198, 198);
+}
+.fooder {
+    width: 1620px;
+    display: flex;
+    margin: auto;
+}
+.fooder ul {
+    list-style: none;
+}
+.fooder ul li{
+    padding-bottom: 15px ;
+}
+.fooder ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: segoe ui light;
+}
+
+.fooder .nav_menu_5 {
+    width: 314px;
+    margin-top: 20px;
+}
+.fooder .nav_menu_6 {
+    width: 314px;
+    margin-top: 20px;
+}
+.fooder .nav_menu_7 {
+    width: 314px;
+    margin-top: 20px;
+}
+.fooder .text_6 {
+    width: 314px;
+    margin-top: 20px;
+}
+.fooder .text_7 {
+    width: 314px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: segoe ui light;
+}
